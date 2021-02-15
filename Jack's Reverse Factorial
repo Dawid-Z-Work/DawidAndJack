@@ -1,0 +1,26 @@
+package example;
+import java.util.*;
+import java.lang.*;
+
+public class Example {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner ssc = new Scanner(System.in);
+        System.out.println(" enter the number");
+        int n=ssc.nextInt();
+        int m=n;
+        
+        for(int x=2;m!=x;x++){
+            m=m/x;
+            } 
+        if(m==0||m==1){
+            System.out.println("None");
+            } else {
+        System.out.println("the reverse factorial of "+n+ " is "+m+"!");
+            }
+        
+    } 
+    
+    
+}
