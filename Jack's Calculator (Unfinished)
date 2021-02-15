@@ -1,0 +1,64 @@
+package java3;
+import java.util.Scanner;
+public class Calculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input = new Scanner(System.in);
+		
+		int num1;
+		int num2;
+		int num3;
+		int sum;
+		String operation;
+		
+		System.out.println("A prompt for three numbers will appear, make sure it is number1, number 2 and the answer");
+		System.out.println("Enter The first value"); 
+		num1= input.nextInt();
+		System.out.println("Enter The second value"); 
+		num2= input.nextInt();
+		System.out.println("Enter The Answer value"); 
+		num3= input.nextInt();
+	
+		
+		System.out.println("Would you like to +, -, * or /?");
+		String operator = input.next();
+		
+		
+		////////////// IF statements
+		
+		if (operator.equals("+")) { 
+		sum = (num1 + num2);
+		System.out.println("Here are your possible combinations");
+		System.out.println(num1 + " + " + num2 + " = " + sum);
+		System.out.println(num2 + " + " + num1 + " = " + sum);
+		
+		}
+		if (operator.equals("-")) { 
+		sum = (num1 - num2);
+		System.out.println("Here are your possible combinations");
+		System.out.println(num1 + " - " + num2 + " = " + sum);
+		System.out.println(num2 + " - " + num1 + " = " + sum);
+		}
+	
+		if (operator.equals("*")) { 
+			sum = (num1 * num2);
+			System.out.println("Here are your possible combinations");
+			System.out.println(num1 + " * " + num2 + " = " + sum);
+			System.out.println(num2 + " * " + num1 + " = " + sum);
+		}
+		if (operator.equals("/")) { 
+				sum = (num1 / num2);
+				System.out.println("Here are your possible combinations");
+				System.out.println(num1 + " / " + num2 + " = " + sum);
+				System.out.println(num2 + " / " + num1 + " = " + sum);	
+	
+		}
+	}
+}
+	
+		
+				
+
+
